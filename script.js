@@ -15,6 +15,12 @@ function generatePassword() {
         isValidUserInput = true
       }
     }
+  var isPasswordNumbers = prompt ("Do you want numbers in your password? Please input either y or n");
+  if (isPasswordNumbers == "y"){
+    isPasswordNumbers = true
+  } else if (isPasswordNumbers == "n"){
+      isPasswordNumbers = false
+  }
   // Data
   // we need different sets of characters - maybe strings or arrays
     // numbers
