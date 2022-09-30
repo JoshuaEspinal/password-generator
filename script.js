@@ -38,7 +38,27 @@ function generatePassword() {
     isPasswordSpecial = true
   } else if (isPasswordSpecial == "n"){
       isPasswordSpecial = false
-    }    
+    }
+  var validCharacterGroups = [];
+  if (isPasswordNumbers) {
+    validCharacterGroups.push(passwordNumbers);
+  }
+  if (isPasswordLowercase) {
+    validCharacterGroups.push(passwordLowercase);
+  }
+  if (isPasswordUppercase) {
+    validCharacterGroups.push(passwordUppercase);
+  }
+  if (isPasswordSpecial) {
+    validCharacterGroups.push(passwordSpecial);
+  }
+  while (password.length != passwordLength) {
+    var randomSelectedCharacterGroup = validCharacterGroups[Math.floor(Math.random()*validCharacterGroups.length)];
+    console.log(randomSelectedCharacterGroup);
+    var randomCharacterNumber = Math.floor(Math.random()*randomSelectedCharacterGroup.length);
+    var randomSelectedCharacter = randomSelectedCharacterGroup.substring(randomCharacterNumber - 1, randomCharacterNumber);
+    password += randomSelectedCharacter;
+  }    
   // Data
   // we need different sets of characters - maybe strings or arrays
     // numbers
@@ -61,7 +81,7 @@ function generatePassword() {
 
 // put them together
 
-return "password"
+return password
 }
 
 // Write password to the #password input
