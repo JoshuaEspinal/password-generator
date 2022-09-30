@@ -24,22 +24,19 @@ function generatePassword() {
   var isPasswordLowercase = prompt ("Do you want lowercase characters in your password? Please input either y or n");
   if (isPasswordLowercase == "y"){
     isPasswordLowercase = true
-  } else if
-    (isPasswordLowercase == "n"){
+  } else if (isPasswordLowercase == "n"){
       isPasswordLowercase = false
   }
   var isPasswordUppercase = prompt ("Do you want uppercase characters in your password? Please input either y or n");
   if (isPasswordUppercase == "y"){
     isPasswordUppercase = true
-  } else if
-    (isPasswordUppercase == "n"){
+  } else if (isPasswordUppercase == "n"){
       isPasswordUppercase = false
     }
   var isPasswordSpecial = prompt ("Do you want special characters in your password? Please input either y or n");
   if (isPasswordSpecial == "y"){
     isPasswordSpecial = true
-  } else if
-    (isPasswordSpecial == "n"){
+  } else if (isPasswordSpecial == "n"){
       isPasswordSpecial = false
     }    
   // Data
