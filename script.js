@@ -21,6 +21,13 @@ function generatePassword() {
   } else if (isPasswordNumbers == "n"){
       isPasswordNumbers = false
   }
+  var isPasswordLowercase = prompt ("Do you want lowercase characters in your password? Please input either y or n");
+  if (isPasswordLowercase == "y"){
+    isPasswordLowercase = true
+  } else if
+    (isPasswordLowercase == "n"){
+      isPasswordLowercase = false
+  } 
   // Data
   // we need different sets of characters - maybe strings or arrays
     // numbers
