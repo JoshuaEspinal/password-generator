@@ -2,6 +2,13 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
+  var isValidUserInput
+  var password = ""
+  var passwordNumbers = ("1234567890");
+  var passwordLowercase = ("abcdefghijklmnopqrstuvwxyz");
+  var passwordUppercase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  var passwordSpecial = ("!@#$%^&*()");
+  var passwordLength = ""
   // Data
   // we need different sets of characters - maybe strings or arrays
     // numbers
