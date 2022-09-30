@@ -9,6 +9,12 @@ function generatePassword() {
   var passwordUppercase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
   var passwordSpecial = ("!@#$%^&*()");
   var passwordLength = ""
+  while (isValidUserInput != true) {
+    passwordLength = prompt ("How many characters would you like in your password? Input at least 8 and no more than 128.");
+      if (passwordLength >= 8 && passwordLength <= 128) {
+        isValidUserInput = true
+      }
+    }
   // Data
   // we need different sets of characters - maybe strings or arrays
     // numbers
